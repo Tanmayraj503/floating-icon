@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ai-summarize-container {
+  position: relative;
+  display: inline-block;
+}
+
+.ai-summarize-btn {
+  padding: 16px;
+  background: #F5F6FE;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 8px;
+}
+
+.ai-summarize-menu {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  box-shadow: 0 8px 16px rgba(32,35,38,0.1);
+  z-index: 100;
+  top: 110%; 
+  left: 0;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 20px 16px 20px;
+  min-width: 210px;
+  gap: 10px;
+}
+
+.ai-summarize-container:hover .ai-summarize-menu,
+.ai-summarize-container:focus-within .ai-summarize-menu {
+  display: flex;
+}
+
+.ai-summarize-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.ai-summarize-title small {
+  display: block;
+  color: #666;
+  font-size: 0.9em;
+  margin-left: 30px;
+}
+
+.ai-summarize-menu button {
+  background: #F5F6FE;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.ai-summarize-menu button:hover {
+  background: #e0e2f4;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Main button/container -->
+<div class="ai-summarize-container">
+  <div class="ai-summarize-btn">
+    <img src="your-icon.svg" alt="Summarize Icon" class="summarize-icon" />
+    <span>AI Summarize</span>
+  </div>
+  <!-- Hidden by default, shown on hover -->
+  <div class="ai-summarize-menu">
+    <div class="ai-summarize-title">
+      <small>Select your AI for quick analysis:</small>
+    </div>
+    <button>ChatGPT</button>
+    <button>Google AI</button>
+    <button>Perplexity</button>
+    <button>You.com</button>
+    <button>Claude</button>
+  </div>
+</div>
+
+</body>
+</html>
