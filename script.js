@@ -7,7 +7,7 @@ function openAI(platform) {
       url = `https://chat.openai.com/?q=${query}`;
       break;
     case 'google':
-      url = `https://gemini.google.com/app?q=${query}`;
+      url = `https://gemini.google.com/app/442ac17b8f074dcd?q=top%20achievement%20of%20isro`;
       break;
     case 'perplexity':
       url = `https://www.perplexity.ai/search?q=${query}`;
